@@ -1,0 +1,24 @@
+project/
+|-- domain/
+|   |-- __init__.py
+|   |-- product.py
+|   |-- product_repository.py
+|
+|-- application/
+|   |-- __init__.py
+|   |-- product_service.py
+|
+|-- infrastructure/
+|   |-- __init__.py
+|   |-- database.py
+|   |-- sqlite_product_repository.py
+|   |-- mysql_product_repository.py
+|   |-- mongodb_product_repository.py
+|   |-- s3_product_repository.py
+|   |-- local_product_repository.py
+|
+|-- interface/
+|   |-- __init__.py
+|   |-- cli.py
+|
+|-- main.py
