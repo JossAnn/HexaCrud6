@@ -9,10 +9,10 @@ def connect_sqlite():
 
 def connect_mysql():
     return mysql.connector.connect(
-        host="your-rds-endpoint",
-        user="your-username",
-        password="your-password",
-        database="your-database"
+        host="mydbinstancesql.c0zolapcanem.us-east-1.rds.amazonaws.com",
+        user="admin",
+        password="adminadministrator",
+        database="database-1"
     )
 
 def connect_mongodb():

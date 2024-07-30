@@ -7,14 +7,14 @@ from application.product_service import ProductService
 from interface.cli import menu
 
 def main():
-    print("Select Repository:")
+    print("Selecciona el Repositorio:")
     print("1. SQLite")
     print("2. MySQL")
     print("3. MongoDB")
     print("4. S3")
     print("5. Local Storage")
     
-    choice = input("Enter your choice: ")
+    choice = input("Ingresa el numero del Repositorio: ")
 
     if choice == "1":
         repository = SQLiteProductRepository()
@@ -27,7 +27,7 @@ def main():
     elif choice == "5":
         repository = LocalProductRepository()
     else:
-        print("Invalid choice. Exiting.")
+        print("Seleccion invalida, intentalo de nuevo.")
         return
     
     service = ProductService(repository)
